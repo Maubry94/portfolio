@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    height: 709px;
+}
+
+hr {
+    margin: 80px 0;
+    width: 90%;
+    border: 1px solid black;
+}
+
+
+
+/*--------------------HEADER--------------------*/
+header {
+    background-color: #282828;
+    width: calc(100% - 300px);
+    height: 90px;
+    padding: 0 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-img-ctnr {
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+
+#header-img-ctnr img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header nav {
+    width: 400px;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    padding: 35px 0;
+}
+
+header a:hover {
+    border-bottom: 2px solid white;
+    padding: 34px 0;
+}
+
+/*--------------------PROJECT--------------------*/
+#projects-section {
+    height: 100%;
+    justify-content: center;
+    background-image: url(../img/bg.png);
+    box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#project-container {
+    width: 90%;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.project {
+    width: 350px;
+    height: 350px;
+    transition: 0.5s ease;
+    margin: 20px;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    position: relative;
+}
+
+#no-mercy-3d {
+    background-image: url(../img/no-mercy-3d.png);
+}
+
+#no-mercy-3d:hover {
+    background-image: url(../img/no-mercy-3d.gif);
+}
+
+#kwick-chat {
+    background-image: url(../img/kwick-chat.png);
+}
+
+#kwick-chat:hover {
+    background-image: url(../img/kwick-chat.gif);
+}
+
+#leap-motion {
+    background-image: url(../img/leap-motion.png);
+}
+
+#no-mercy {
+    background-image: url(../img/no-mercy.png);
+}
+
+#fix-it {
+    background-image: url(../img/fix-it.png);
+}
+
+#global_magazine {
+    background-image: url(../img/global_magazine.png);
+}
+
+.project div {
+    background: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    padding: 5px 0px;
+    text-align: center;
+    width: 350px;
+    transition: 0.6s;
+    bottom: -36%;
+}
+
+.project p {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.project:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+.project:hover div {
+    bottom: 0;
+}
+
+
+
+/*--------------------Footer--------------------*/
+footer {
+    width: 100%;
+    height: 150px;
+    padding-top: 20px;
+    background-color: #282828;
+}
+
+footer h2 {
+    margin: 0 0 0 30px;
+    color: white;
+    font-size: 40px;
+}
+
+#contact {
+    display: flex;
+    height: 215px;
+    flex-direction: column;
+}
+
+#links {
+    margin-top: 40px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    font-size: 18px;
+    margin-right: 25px;
+}
+
+#links a {
+    color: white;
+    text-decoration: none;
+}
