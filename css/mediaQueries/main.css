@@ -66,8 +66,7 @@
         flex-direction: column;
     }
 
-    #project-1 img,
-    #project-2 img {
+    .illustration {
         margin-top: 35px;
         width: 85%;
     }
@@ -294,8 +293,7 @@
         flex-direction: column;
     }
 
-    #project-1 img,
-    #project-2 img {
+    .illustration {
         margin-top: 35px;
         width: 90%;
     }
@@ -373,8 +371,7 @@
         flex-direction: column;
     }
 
-    #project-1 img,
-    #project-2 img {
+    .illustration {
         margin-top: 35px;
         width: 90%;
     }
