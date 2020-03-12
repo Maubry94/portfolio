@@ -40,7 +40,7 @@
 
     #about-me-ctnr-left {
         width: 100px;
-        height: 100px;
+        height: 125px;
     }
 
     #about-me-ctnr-right {
@@ -94,7 +94,7 @@
     }
 
     #skills-section p {
-        font-size: 15px;
+        font-size: 12px;
     }
 
 
