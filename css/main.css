@@ -310,6 +310,7 @@ hr {
 }
 
 .flex-wrapper {
+    margin: 30px 0 50px 0;
     display: flex;
     flex-flow: row nowrap;
 }
