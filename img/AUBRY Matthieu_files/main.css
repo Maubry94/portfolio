@@ -309,9 +309,6 @@ hr {
 /*--------------------Skills section--------------------*/
 #skills-section {
     position: relative;
-    height: 586px;
-    align-items: center;
-    justify-content: center;
     width: 90%;
     -webkit-box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.33);
     box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.33);
@@ -325,7 +322,7 @@ hr {
     margin-bottom: 30px;
 }
 
-.skill-btn {
+.test {
     position: absolute;
     width: 50px;
     height: 50px;
@@ -344,19 +341,9 @@ hr {
     top: 50%;
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
+
 }
 
-.left-arrow {
-    position: absolute;
-    top: 16px;
-    left: 15px;
-}
-
-.right-arrow {
-    position: absolute;
-    top: 16px;
-    right: 15px;
-}
 
 #skill-title1 {
     margin-top: 50px;
@@ -443,17 +430,10 @@ hr {
 .software-img {
     width: 150px;
     height: auto;
-    margin-left: 30px;
 }
 
 .content {
     padding: 0 20%;
-}
-
-.content h4 {
-    padding: 0 0 0 20%;
-    width: 100%;
-    text-align: center;
 }
 
 

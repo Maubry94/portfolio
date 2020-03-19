@@ -116,6 +116,10 @@ header a:hover {
     background-image: url(../img/leap-motion.png);
 }
 
+#leap-motion:hover {
+    background-image: url(../img/leap_physic.gif);
+}
+
 #no-mercy {
     background-image: url(../img/no-mercy.png);
 }
