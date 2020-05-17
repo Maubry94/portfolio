@@ -34,7 +34,7 @@
   /*--------------------About me--------------------*/
   #about-me-section {
     margin-top: 50px;
-    height: 500px;
+    height: 350px;
   }
 
   .about-me-ctnr-right h1 {
@@ -64,12 +64,12 @@
   /*--------------------Projects--------------------*/
   .project-ctnr {
     margin: 0 0 0 0;
-    width: 95%;
+    width: 100%;
   }
 
   .project {
     position: relative;
-    width: 290px;
+    width: 300px;
     height: auto;
   }
 
@@ -168,7 +168,7 @@
   /*--------------------About me--------------------*/
   #about-me-section {
     margin-top: 50px;
-    height: 500px;
+    height: 400px;
   }
 
   .about-me-ctnr-right h1 {
