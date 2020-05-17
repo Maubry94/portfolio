@@ -128,12 +128,25 @@ header a:hover {
   align-items: center;
 }
 
-.about-me-ctnr-left {
+/* .about-me-ctnr-left {
   width: 280px;
   height: 280px;
   border-radius: 100%;
   background-image: url(../img/mat2.jpg);
   background-size: cover;
+} */
+
+.about-me-ctnr-left {
+  width: 180px;
+  height: 180px;
+}
+
+.about-me-ctnr-left img {
+  object-fit: cover;
+  background-position: center;
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .about-me-ctnr-right {
@@ -187,14 +200,14 @@ header a:hover {
   height: 620px;
   margin: 40px 20px;
   background-color: white;
-  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
   transition: 0.5s ease;
 }
 
 .project:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   transition: 0.5s ease;
 }
 
