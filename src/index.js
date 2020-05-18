@@ -2,6 +2,8 @@ import "./style/index.css";
 import "./style/indexMediaQueries.css";
 import "./js/kit.js";
 import "./js/webgl.js";
+import feelOuhSource from "./music/feel_ouh.mp3";
+import robloxFace from "./images/ouh.png";
 
 /**
  * lazy-load
@@ -110,3 +112,34 @@ const devEgg = window.location.hash == "#dev";
 if (devEgg) {
   console.log("You'r a developper ;)");
 }
+
+const ouhEgg = window.location.hash == "#ouh";
+const feelOuh = new Audio(feelOuhSource);
+
+const alertBox = document.querySelector(".alert-msg");
+const imgs = document.querySelectorAll("img");
+
+const yesBtn = document.querySelector(".yes");
+const noBtn = document.querySelector(".no");
+
+let played = false;
+
+if (ouhEgg) {
+  alertBox.style.display = "flex";
+}
+
+yesBtn.addEventListener("click", () => {
+  if (played) return;
+  for (const img of imgs) {
+    img.setAttribute("src", robloxFace);
+  }
+  feelOuh.play();
+  feelOuh.volume = 0.25;
+  played = true;
+  alertBox.style.display = "none";
+});
+
+noBtn.addEventListener("click", () => {
+  alertBox.style.display = "none";
+  self.location = "./index.html";
+});

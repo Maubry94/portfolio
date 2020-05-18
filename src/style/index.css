@@ -93,6 +93,29 @@ header a:hover {
   padding: 10px 0;
 }
 
+/*--------------------Alert message--------------------*/
+.alert-msg {
+  position: absolute;
+  z-index: 11;
+  top: 10%;
+  left: calc(50% - 150px);
+  width: 300px;
+  height: 150px;
+  background-color: white;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.alert-msg p {
+  text-align: center;
+}
+
+.msg-btn-ctnr {
+  display: flex;
+  justify-content: center;
+}
+
 /*--------------------About Me--------------------*/
 #about-me-section {
   position: relative;

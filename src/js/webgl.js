@@ -115,9 +115,9 @@ const camera = new THREE.PerspectiveCamera(
   0.01,
   100
 );
-camera.position.x = 0.5518654976307638;
-camera.position.y = 5.3082346211116525;
-camera.position.z = 8.457428077125835;
+camera.position.x = 0.1071413830526592;
+camera.position.y = 9.717713511457397;
+camera.position.z = 2.3110644694679543;
 
 scene.add(camera);
 
@@ -136,8 +136,8 @@ window.addEventListener("resize", () => {
  */
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = false;
-controls.zoomSpeed = 0.3;
-
+controls.enableZoom = false;
+controls.enablePan = false;
 // Animation
 const tick = () => {
   renderer.render(scene, camera);
