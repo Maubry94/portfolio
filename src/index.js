@@ -26,7 +26,7 @@ for (const element of lazyLoadElement) {
  * Project scroll animation
  */
 document.addEventListener("DOMContentLoaded", () => {
-  const links = document.querySelectorAll('#top-nav a[href^="#"]');
+  const links = document.querySelectorAll("#top-nav a");
   Array.from(links).forEach(link => {
     link.addEventListener("click", event => {
       event.preventDefault();
