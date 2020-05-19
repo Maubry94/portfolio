@@ -12,6 +12,15 @@ const scene = new THREE.Scene();
 const galaxy = new THREE.Scene();
 scene.add(galaxy);
 
+//--------------------Grab cursor--------------------
+canvas.addEventListener("mousedown", () => {
+  canvas.style.cursor = "grabbing";
+});
+
+canvas.addEventListener("mouseup", () => {
+  canvas.style.cursor = "grab";
+});
+
 //--------------------Scene objects here--------------------
 /**
  * Textures

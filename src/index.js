@@ -2,6 +2,7 @@ import "./style/index.css";
 import "./style/indexMediaQueries.css";
 import "./js/kit.js";
 import "./js/webgl.js";
+import Typed from "typed.js";
 import feelOuhSource from "./music/feel_ouh.mp3";
 import robloxFace from "./images/ouh.png";
 
@@ -86,6 +87,16 @@ document.addEventListener("DOMContentLoaded", () => {
 // });
 
 /**
+ * Typed.js
+ */
+let typed = new Typed(".test", {
+  startDelay: 300,
+  loop: true,
+  strings: ["Juste un test ;)^700"],
+  typeSpeed: 80,
+});
+
+/**
  * Show CV
  */
 const button = document.querySelector(".btn-cv");
@@ -118,6 +129,10 @@ const feelOuh = new Audio(feelOuhSource);
 
 const alertBox = document.querySelector(".alert-msg");
 const imgs = document.querySelectorAll("img");
+const h2 = document.querySelectorAll("h2");
+const h3 = document.querySelectorAll("h3");
+const a = document.querySelectorAll("a");
+const p = document.querySelectorAll("p");
 
 const yesBtn = document.querySelector(".yes");
 const noBtn = document.querySelector(".no");
@@ -130,8 +145,20 @@ if (ouhEgg) {
 
 yesBtn.addEventListener("click", () => {
   if (played) return;
-  for (const img of imgs) {
-    img.setAttribute("src", robloxFace);
+  for (const _element of imgs) {
+    _element.setAttribute("src", robloxFace);
+  }
+  for (const _element of h2) {
+    _element.innerHTML = "ouh.";
+  }
+  for (const _element of h3) {
+    _element.innerHTML = "ouh.";
+  }
+  for (const _element of a) {
+    _element.innerHTML = "ouh.";
+  }
+  for (const _element of p) {
+    _element.innerHTML = "ouh.";
   }
   feelOuh.play();
   feelOuh.volume = 0.25;
@@ -143,3 +170,5 @@ noBtn.addEventListener("click", () => {
   alertBox.style.display = "none";
   self.location = "./index.html";
 });
+
+if (feelOuh.ended == true) document.self.location = "./index.html";
