@@ -23,7 +23,7 @@
     width: calc(100% - 40px);
   }
 
-  header nav {
+  #top-nav {
     width: 200px;
   }
 
@@ -96,6 +96,27 @@
     margin: 5px 5px 5px 5px;
   }
 
+  /*--------------------Skill section--------------------*/
+  .dev-skill,
+  .other-skill {
+    width: 90%;
+    margin: 35px 0;
+  }
+
+  .skill-ctnr {
+    justify-content: center;
+  }
+
+  .skill {
+    margin: 0;
+    width: 100px;
+    height: 100px;
+  }
+
+  .skill img {
+    width: 40%;
+  }
+
   /*--------------------CV section--------------------*/
   #cv-section {
     min-height: auto;
@@ -157,8 +178,8 @@
     width: calc(100% - 40px);
   }
 
-  header nav {
-    width: 300px;
+  #top-nav {
+    width: 250px;
   }
 
   header nav a {
@@ -202,6 +223,27 @@
 
   .project-content p {
     font-size: 15px;
+  }
+
+  /*--------------------Skill section--------------------*/
+  .dev-skill,
+  .other-skill {
+    width: 90%;
+    margin: 35px 0;
+  }
+
+  .skill-ctnr {
+    justify-content: center;
+  }
+
+  .skill {
+    margin: 0;
+    width: 100px;
+    height: 100px;
+  }
+
+  .skill img {
+    width: 55%;
   }
 
   /*--------------------CV section--------------------*/
@@ -263,6 +305,10 @@
     width: calc(100% - 40px);
   }
 
+  #top-nav {
+    width: 300px;
+  }
+
   header nav a {
     font-size: 13px;
   }
@@ -295,6 +341,17 @@
 
   .about-me-ctnr-right {
     width: 80%;
+  }
+
+  /*--------------------Skill section--------------------*/
+  .skill {
+    margin: 0;
+    width: 150px;
+    height: 150px;
+  }
+
+  .skill img {
+    width: 60%;
   }
 
   /*--------------------CV section--------------------*/

@@ -68,7 +68,7 @@ header {
   top: 0;
   z-index: 10;
   background-color: #282828;
-  width: calc(100% - 300px);
+  width: 100%;
   height: 56px;
   padding: 0 150px;
   display: flex;
@@ -77,12 +77,21 @@ header {
 }
 
 header nav {
-  width: 400px;
   height: 100%;
   padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#top-nav {
+  width: 400px;
+}
+
+.language-nav {
+  position: absolute;
+  width: 55px;
+  right: 20px;
 }
 
 header a {
@@ -196,7 +205,7 @@ header a:hover {
 
 /*--------------------Projects section--------------------*/
 #projects-section {
-  min-height: 75vh;
+  min-height: 100vh;
   padding-top: 50px;
   background-image: url(../images/bg.png);
   box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05),
@@ -269,7 +278,7 @@ header a:hover {
 }
 /*--------------------Skills section--------------------*/
 #skill-section {
-  height: 75vh;
+  min-height: 75px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -279,6 +288,7 @@ header a:hover {
 .dev-skill,
 .other-skill {
   width: 80%;
+  margin: 35px;
   display: flex;
   flex-direction: column;
   align-items: center;
