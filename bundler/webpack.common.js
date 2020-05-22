@@ -65,6 +65,20 @@ module.exports = {
         ],
       },
 
+      // Videos
+      {
+        test: /\.(mp4)$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              outputPath: "assets/images/",
+            },
+          },
+        ],
+      },
+
       // Shaders
       {
         test: /\.(glsl|vs|fs|vert|frag)$/,

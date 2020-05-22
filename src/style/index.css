@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
 
-html {
+/* html {
   overflow-x: hidden;
-}
+} */
 
 body {
+  width: 100%;
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
@@ -85,7 +86,7 @@ header {
   top: 0;
   z-index: 10;
   background-color: #282828;
-  width: calc(100% - 300px);
+  width: calc(100vw - 300px);
   height: 56px;
   padding: 0 150px;
   display: flex;
@@ -94,21 +95,12 @@ header {
 }
 
 header nav {
+  width: 400px;
   height: 100%;
   padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-#top-nav {
-  width: 400px;
-}
-
-.language-nav {
-  position: absolute;
-  width: 55px;
-  right: 20px;
 }
 
 header a {
@@ -127,7 +119,7 @@ header a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1000px;
+  width: 50vw;
   height: 100px;
 }
 
@@ -223,7 +215,7 @@ header a:hover {
 
 /*--------------------Projects section--------------------*/
 #projects-section {
-  min-height: 100vh;
+  height: auto;
   padding-top: 50px;
   background-image: url(../images/bg.png);
   box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05),
@@ -248,11 +240,6 @@ header a:hover {
   -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
-  transition: 0.5s ease;
-}
-
-.project:hover {
-  transform: scale(1.02);
   transition: 0.5s ease;
 }
 
@@ -296,7 +283,7 @@ header a:hover {
 }
 /*--------------------Skills section--------------------*/
 #skill-section {
-  min-height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -336,7 +323,7 @@ header a:hover {
 
 /*--------------------CV--------------------*/
 #cv-section {
-  min-height: 100vh;
+  height: auto;
 }
 
 .btn-cv {
