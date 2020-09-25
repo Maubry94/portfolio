@@ -1,4 +1,4 @@
-# Portfolio - Base 1
+# Portfolio
 
 ## Setup
 Download [Node.js](https://nodejs.org/en/download/).
